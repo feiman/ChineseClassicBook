@@ -27,6 +27,10 @@
             android:launchMode="singleTask"
             android:theme="@style/CommonActivityAppTheme" />
         <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CommonActivityAppTheme" />
+        <activity
             android:name=".ui.detail.TangDetailActivity"
             android:theme="@style/CommonActivityAppTheme" />
         <activity

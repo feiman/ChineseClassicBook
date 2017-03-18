@@ -7,6 +7,7 @@ import com.baidu.appx.BDBannerAd;
 import com.baidu.appx.BDInterstitialAd;
 import com.baidu.appx.BDSplashAd;
 import com.d.dao.chineseclassicbook.R;
+import com.d.dao.chineseclassicbook.ui.MainActivity;
 import com.d.dao.chineseclassicbook.ui.home.HomeActivity;
 import com.d.dao.zlibrary.base.activity.ZBaseWelcomeActivity;
 import com.socks.library.KLog;
@@ -84,7 +85,7 @@ public class SplashActivity extends ZBaseWelcomeActivity {
         if (!splashAd.isLoaded()) {
             KLog.e("下载广告，下次使用");
             splashAd.loadAd();
-            gotoHome();
+            gotoHomeAfterSeconds(5000);
         }
         //展示开屏广告
         else {
@@ -105,7 +106,7 @@ public class SplashActivity extends ZBaseWelcomeActivity {
     }
 
     private void gotoHome() {
-        Intent intent = new Intent(mContext, HomeActivity.class);
+        Intent intent = new Intent(mContext, MainActivity.class);
         startActivity(intent);
         finish();
     }
