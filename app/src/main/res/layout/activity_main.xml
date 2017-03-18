@@ -1,0 +1,73 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.d.dao.chineseclassicbook.ui.search.MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="200px"
+                android:layout_height="110px"
+                android:layout_centerVertical="true"
+                android:background="#000"
+                android:gravity="center_vertical"
+                android:paddingLeft="32px"
+                android:text="@string/name"
+                android:textColor="#fff"
+                android:textSize="36px" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="56px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="32px"
+                android:background="@drawable/shape_edit_text"
+                android:ellipsize="end"
+                android:hint="输入关键字"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="28px"
+                android:textColor="#000"
+                android:textColorHint="#666"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:background="#fff"
+            app:tabBackground="@null"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabIndicatorHeight="4px"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="#000" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+</android.support.design.widget.CoordinatorLayout>

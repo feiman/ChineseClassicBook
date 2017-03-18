@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="10px">
+
+            <RadioButton
+                android:id="@+id/rb_recommend"
+                android:layout_width="0dp"
+                android:layout_height="90px"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_0_back"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="#000"
+                android:textSize="24px" />
+
+            <RadioButton
+                android:id="@+id/rb_stack"
+                android:layout_width="0dp"
+                android:layout_height="90px"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_1_back"
+                android:gravity="center"
+                android:text="书库"
+                android:textColor="#000"
+                android:textSize="24px" />
+
+            <RadioButton
+                android:id="@+id/rb_search"
+                android:layout_width="0dp"
+                android:layout_height="90px"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_2_back"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#000"
+                android:textSize="24px" />
+
+            <RadioButton
+                android:id="@+id/rb_download"
+                android:layout_width="0dp"
+                android:layout_height="90px"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_3_back"
+                android:gravity="center"
+                android:text="下载"
+                android:textColor="#000"
+                android:textSize="24px" />
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

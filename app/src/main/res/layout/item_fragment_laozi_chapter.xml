@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8px"
+    android:layout_marginLeft="8px"
+    android:layout_marginRight="8px"
+    android:layout_marginTop="8px"
+    android:background="#fff"
+    app:cardCornerRadius="4px"
+    app:cardElevation="10px"
+    tools:context="com.d.dao.chineseclassicbook.ui.search.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="登鹳雀楼"
+            android:textSize="24px" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

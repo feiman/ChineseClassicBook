@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16px"
+    android:layout_marginLeft="32px"
+    android:layout_marginRight="32px"
+    android:layout_marginTop="16px"
+    android:background="#fff"
+    android:minHeight="560px"
+    app:cardCornerRadius="10px"
+    app:cardElevation="10px"
+    tools:context="com.d.dao.chineseclassicbook.ui.search.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="42px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="登鹳雀楼"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="240px"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="16px"
+            android:text="白日依山尽，黄河入海流。\n白日依山尽，黄河入海流。"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

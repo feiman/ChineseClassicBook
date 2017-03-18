@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="110px"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/ic_arrow_back_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textColor="#fff"
+                android:textSize="32px" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="32px"
+            android:paddingRight="32px">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="48px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32px"
+                android:gravity="center"
+                android:text="登鹳雀楼"
+                android:textSize="36px" />
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:lineSpacingExtra="10px"
+                android:text="白日依山尽，黄河入海流。\n欲穷千里目，更上一层楼。"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32px"
+                android:layout_marginTop="12px"
+                android:gravity="center_vertical"
+                android:text="注释"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_commentary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:text="1．鹳雀楼：旧址在山西永济县，楼高三层，前对中条山，下临黄河。传说常有鹳雀在此停留，故有此名。\n2．白日：太阳。 \n3．依：依傍。 \n4．尽：消失。 这句话是说太阳依傍山峦沉落。 \n5．穷：尽，使达到极点。 \n6．千里目：眼界宽阔。 \n7．更：替、换。（不是通常理解的“再”的意思)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:text="翻译"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:text="夕阳依傍着西山慢慢地沉没，\n滔滔黄河朝着东海汹涌奔流。\n若想把千里的风光景物看够，\n那就要登上更高的一层城楼。\n"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="32px"
+                android:gravity="center_vertical"
+                android:text="解读"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:id="@+id/tv_interpretation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="32px"
+                android:gravity="center_vertical"
+                android:text="赏析"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:id="@+id/tv_appreciation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="32px" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
