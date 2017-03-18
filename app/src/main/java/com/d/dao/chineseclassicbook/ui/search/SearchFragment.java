@@ -83,7 +83,7 @@ public class SearchFragment extends BaseFragment {
         mFragmentList.add(new FragmentYuan());
         mFragmentList.add(new FragmentLaoZi());
 
-        mViewPagerAdapter = new FragmentAdapter(getFragmentManager(), mFragmentList, titles);
+        mViewPagerAdapter = new FragmentAdapter(getChildFragmentManager(), mFragmentList, titles);
         mViewPager.setOffscreenPageLimit(1);
         mViewPager.setAdapter(mViewPagerAdapter);
         mTab.setupWithViewPager(mViewPager);
